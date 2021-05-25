@@ -5,12 +5,16 @@ import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
 import Index from './page/Index'
+import SearchStudentScore from './page/SearchStudentScore'
 
 Vue.use(VueRouter)
 
 const routes = [{
   path: '/',
   component: Index
+}, {
+  path: '/searchStudentScore',
+  component: SearchStudentScore
 }]
 
 const router = new VueRouter({
